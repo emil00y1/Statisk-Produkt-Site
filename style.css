@@ -174,15 +174,42 @@ h2 {
 
 .new_price {
   color: red;
-  margin-left: 0.7rem;
+  /* margin-left: 0.7rem; */
 }
 
-.onsale {
+.linedtext {
   text-decoration: line-through;
+}
+
+article.sold_out_banner::before {
+  content: "Sold out";
+  position: absolute;
+  font-family: Open Sans;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  z-index: 1;
 }
 
 .sold_out {
   filter: grayscale(100%);
+}
+
+.price_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale_percentage {
+  background-color: rgb(223, 1, 1);
+  color: white;
+  font-family: Open Sans;
+  margin: 0.1rem 0 0 0;
+  padding: 0.2rem;
+}
+
+.hide {
+  display: none;
 }
 
 .sold_out p {

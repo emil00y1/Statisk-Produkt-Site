@@ -20,22 +20,27 @@
         <h1>Products</h1>
       </div>
       <div class="product_overview">
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Sahara Team India Fanwear</h1>
-              <h2 class="card_brand">Nike</h2>
-              <p class="card_price">895,00 kr</p>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
+        <template class="smallProductTemplate">
+          <article class="product_card">
+            <a href="product.html">
+              <div class="thumbnail">
+                <img
+                  src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+                  alt="picture of clothing item"
+                />
+              </div>
+              <div class="card_info">
+                <h1 class="card_title">Sahara Team India Fanwear</h1>
+                <h2 class="card_brand">Nike</h2>
+                <div class="price_container">
+                  <p class="card_price">895,00 kr</p>
+                  <p class="sale_percentage hide"></p>
+                </div>
+              </div>
+            </a>
+          </article>
+        </template>
+        <!-- <article class="product_card">
           <a href="product.html">
             <div class="thumbnail">
               <img
@@ -83,136 +88,9 @@
               <p class="card_price onsale">1.899,00 kr</p>
             </div>
           </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Sahara Team India Fanwear</h1>
-              <h2 class="card_brand">Nike</h2>
-              <p class="card_price">895,00 kr</p>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Deck Navy Blue Backpack</h1>
-              <h2 class="card_brand">Puma</h2>
-              <div class="prices">
-                <p class="card_price onsale">1.299,00 kr</p>
-                <p class="card_price new_price">1.040,00 kr.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Black Fleece Jacket</h1>
-              <h2 class="card_brand">Puma</h2>
-              <p class="card_price">3.999,00 kr</p>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail sold_out">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
-                alt="picture of clothing item"
-              />
-              <p class="sold_out">SOLD OUT</p>
-            </div>
-            <div class="card_info">
-              <h1 class="card_title onsale">Tee</h1>
-              <h2 class="card_brand onsale">Puma</h2>
-              <p class="card_price onsale">1.899,00 kr</p>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Sahara Team India Fanwear</h1>
-              <h2 class="card_brand">Nike</h2>
-              <p class="card_price">895,00 kr</p>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Deck Navy Blue Backpack</h1>
-              <h2 class="card_brand">Puma</h2>
-              <div class="prices">
-                <p class="card_price onsale">1.299,00 kr</p>
-                <p class="card_price new_price">1.040,00 kr.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
-                alt="picture of clothing item"
-              />
-            </div>
-            <div class="card_info">
-              <h1 class="card_title">Black Fleece Jacket</h1>
-              <h2 class="card_brand">Puma</h2>
-              <p class="card_price">3.999,00 kr</p>
-            </div>
-          </a>
-        </article>
-        <article class="product_card">
-          <a href="product.html">
-            <div class="thumbnail sold_out">
-              <img
-                src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
-                alt="picture of clothing item"
-              />
-              <p class="sold_out">SOLD OUT</p>
-            </div>
-            <div class="card_info">
-              <h1 class="card_title onsale">Tee</h1>
-              <h2 class="card_brand onsale">Puma</h2>
-              <p class="card_price onsale">1.899,00 kr</p>
-            </div>
-          </a>
-        </article>
+        </article> -->
       </div>
     </main>
+    <script src="js/productlist.js"></script>
   </body>
 </html>
