@@ -36,7 +36,9 @@ a {
   font-size: 4rem;
 }
 
-.description {
+.description,
+.materialcare,
+.color p {
   font-family: Open Sans;
   font-size: 0.9rem;
 }
