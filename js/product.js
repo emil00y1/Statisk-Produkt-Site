@@ -14,9 +14,9 @@ function showProduct(product) {
   document.querySelector(".gender").textContent = product.gender;
   document.querySelector(".color p").textContent =
     "Color: " + product.basecolour;
-  document.querySelector(".description").textContent = product.description;
+  document.querySelector(".description").innerHTML = product.description;
   document.querySelector(".materialcare").textContent =
     product.materialcaredesc;
-  document.querySelector("img").src =
+  document.querySelector(".productimage").src =
     "https://kea-alt-del.dk/t7/images/webp/640/" + product.id + ".webp";
 }
